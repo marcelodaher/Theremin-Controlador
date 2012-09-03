@@ -34,7 +34,7 @@ def imprime_tela(placar, raquetes, tamanho_raquete, bola):
 				sys.stdout.write(" ")
 
 			for t in range(78):
-			sys.stdout.write(' '),
+				sys.stdout.write(' '),
 
 			if linha >= raquetes[1] and linha<raquetes[1]:
 				print("|")
