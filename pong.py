@@ -44,9 +44,26 @@ def imprime_tela(placar, raquetes, tamanho_raquete, bola):
 			if bola[1]==0:
 				print "POINT USER"
 				placar[0]=placar[0]+1
-			elif bola[1]==79
+			elif bola[1]==79:
 				print "POINT MACHINE"
 				placar[1]=placar[1]+1
+			else:
+				if linha >= raquetes[0] and linha<raquetes[0]:
+					sys.stdout.write("|")
+				else:
+					sys.stdout.write(" ")
+
+				for x in range(bola[2]-2):
+					sys.stdout.write(" ")
+				sys.stdout.write("O")
+				for x in range(78-bola[2]):
+					sys.stdout.write(" ")
+
+				if linha >= raquetes[1] and linha<raquetes[1]:
+					print("|")
+				else:
+					print(" ")
+				
 
 #variaveis no estilo [user,machine]
 placar=[0,0]
