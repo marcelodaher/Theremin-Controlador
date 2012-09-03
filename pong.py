@@ -78,7 +78,7 @@ time = time.time()
 bola = [20,40] #[linha,coluna]
 
 if gol == 0 and placar[0]<5 and placar[1]<5:
-	imprime_tela(
+	imprime_tela(placar, raquetes, tamanho_raquete, bola)
 	
 
 
