@@ -8,12 +8,7 @@ import analyse
 print "debug"
 # Open input stream, 16-bit mono at 44100 Hz
 # On my system, device 2 is a USB microphone, your number may differ.
-stream = pyaudio.open(
-    format = pyaudio.paInt16,
-    channels = 1,
-    rate = 44100,
-    input_device_index = 1,
-    input = True)
+stream = pyaudio.open(format = pyaudio.paInt16,channels = 1,rate = 44100,input_device_index = 1,input = True)
 
 while True:
     # Read raw microphone data
